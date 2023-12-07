@@ -282,7 +282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelButtonText: {fileID: 5651395071449974513}
-  _levelNumber: 1
+  <Button>k__BackingField: {fileID: 7919631678697930546}
+  <LevelNumber>k__BackingField: 0
 --- !u!1 &8361043855442029530
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,3 +423,4 @@ MonoBehaviour:
   _config:
     PunchScaleOnClick: 1
     ClickScale: 1
+    Duration: 0.2

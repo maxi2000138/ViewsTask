@@ -14,6 +14,7 @@ public class OrientationCameraHandle : MonoBehaviour
     void OnEnable()
     {
         _startWidth = GetStartWidth();
+        OnOrientationChanged(OrientationListener.previousOrientation);
         OrientationListener.OnOrientationChanged += OnOrientationChanged;
     }
 

@@ -4,15 +4,25 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Zenject;
 
 public class CustomButton : MonoBehaviour
 {
     [SerializeField] private Button _button;
     [SerializeField] private Config _config;
+    private IButton _buttonLogic;
 
+
+    [Inject]
+    private void Construct(IButton button)
+    {
+        _buttonLogic = button;
+    }
     
     private void Start()
     {
+        _button.onClick.AddListener(_buttonLogic.OnClick);
+        
         if(_config.PunchScaleOnClick)
             _button.onClick.AddListener(DisableAndScaleOnClick);
     }
