@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d997701fd9bdcd44badbcb14b31f58a, type: 3}
+  m_Name: DataDB
+  m_EditorClassIdentifier: 
+  DataContainers:
+  - rid: 6925662284169871368
+  - rid: 6925662284169871369
+  SaveDataIds:
+  - e2938e6b-3514-4be8-b9d1-c5f8fc5a3951
+  - 8b74949a-8e52-4084-a77f-a339ba6c164e
+  references:
+    version: 2
+    RefIds:
+    - rid: 6925662284169871368
+      type: {class: BoolDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: e2938e6b-3514-4be8-b9d1-c5f8fc5a3951
+        _name: Sound
+        _data: 1
+    - rid: 6925662284169871369
+      type: {class: BoolDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: 8b74949a-8e52-4084-a77f-a339ba6c164e
+        _name: Music
+        _data: 1

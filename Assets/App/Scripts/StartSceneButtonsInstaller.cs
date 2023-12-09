@@ -12,7 +12,7 @@ public class StartSceneButtonsInstaller : MonoInstaller
     {
         Container.Bind<IButton>().To<PlayButtonLogic>().WhenInjectedIntoInstance(_playButton);
         Container.Bind<IButton>().To<ShopButtonLogic>().WhenInjectedIntoInstance(_shopButton);
+        Container.Bind<IButton>().To<SettingsButtonLogic>().WhenInjectedIntoInstance(_settingsButton);
         Container.Bind<IButton>().To<DefaultButtonLogic>().WhenInjectedIntoInstance(_rewardButton);
-        Container.Bind<IButton>().To<DefaultButtonLogic>().WhenInjectedIntoInstance(_settingsButton);
     }
 }

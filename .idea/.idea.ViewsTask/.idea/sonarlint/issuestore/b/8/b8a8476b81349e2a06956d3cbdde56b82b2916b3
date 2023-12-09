@@ -1,0 +1,9 @@
+
+Ncsharpsquid:S1862)"*This branch duplicates the one on line 38.(Â®ï¯8šÊœÄ1
+Scsharpsquid:S1862/"*This branch duplicates the one on line 44.(­® æûÿÿÿÿ8›ÊœÄ1
+Ycsharpsquid:S1854""5Remove this useless assignment to local variable 'v'.(¿Êƒß8›ÊœÄ1
+Ocsharpsquid:S3903"2Move 'OrientationListener' into a named namespace.(ïƒãÏ
+acsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(ÒÌ÷Ò
+mcsharpsquid:S2223"PChange the visibility of 'previousOrientation' or make it 'const' or 'readonly'.(ÒÌ÷Ò
+rcsharpsquid:S2696"UMake the enclosing instance method 'static' or remove this set on the 'static' field.(·œÓ›
+ycsharpsquid:S26966"UMake the enclosing instance method 'static' or remove this set on the 'static' field.(Ïàºú8›ÊœÄ1

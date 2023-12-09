@@ -2,7 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using Zenject;
 
@@ -10,22 +10,42 @@ public class CustomButton : MonoBehaviour
 {
     [SerializeField] private Button _button;
     [SerializeField] private Config _config;
-    private IButton _buttonLogic;
+    
+    [InjectOptional] private IButton _buttonLogic;
+    private MusicPlayer _musicPlayer;
 
 
     [Inject]
-    private void Construct(IButton button)
+    private void Construct(MusicPlayer musicPlayer)
     {
-        _buttonLogic = button;
+        _musicPlayer = musicPlayer;
     }
     
-    private void Start()
+    private void OnEnable()
     {
-        _button.onClick.AddListener(_buttonLogic.OnClick);
+        AddListener(PlaySoundOnClick);
+
+        if(_buttonLogic != null)
+            AddListener(_buttonLogic.OnClick);
         
         if(_config.PunchScaleOnClick)
-            _button.onClick.AddListener(DisableAndScaleOnClick);
+            AddListener(DisableAndScaleOnClick);
     }
+
+    private void OnDisable()
+    {
+        RemoveListener(PlaySoundOnClick);
+
+        if(_buttonLogic != null)
+            RemoveListener(_buttonLogic.OnClick);
+
+        if(_config.PunchScaleOnClick)
+            RemoveListener(DisableAndScaleOnClick);
+    }
+
+    public void AddListener(UnityAction listener) => _button.onClick.AddListener(listener);
+    public void RemoveListener(UnityAction listener) => _button.onClick.RemoveListener(listener);
+
 
     private async void DisableAndScaleOnClick()
     {
@@ -33,6 +53,12 @@ public class CustomButton : MonoBehaviour
         await _button.transform.DOPunchScale(new Vector3(1f,1f,1f) * _config.ClickScale, _config.Duration).Play().ToUniTask();
         _button.interactable = true;
     }
+    
+    public void PlaySoundOnClick()
+    {
+        _musicPlayer.PLayClickSound();
+    }
+        
     
     [Serializable]
     private class Config

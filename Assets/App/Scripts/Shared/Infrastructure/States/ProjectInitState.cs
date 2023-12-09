@@ -6,16 +6,10 @@ namespace App.Scripts.Infrastructure.Installers
 {
     public class ProjectInitState : IEnterState
     {
-        private readonly IDataContainersStorage _dataContainersStorage;
-
-        public ProjectInitState(IDataContainersStorage dataContainersStorage)
-        {
-            _dataContainersStorage = dataContainersStorage;
-        }
-        
         public UniTask Enter(IGameStateMachine gameStateMachine)
         {
             SetupGameFps();
+            gameStateMachine.Enter<ProjectLoadDataState>();
             return UniTask.CompletedTask;
         }
 
@@ -23,8 +17,6 @@ namespace App.Scripts.Infrastructure.Installers
         {
             Application.targetFrameRate = 60;
             QualitySettings.vSyncCount = 0;
-            
-            _dataContainersStorage.LoadStaticData();
         }
     }
 }
