@@ -4,4 +4,5 @@ public interface ISettingsPopupPresenter : IPopupPresenter
     void MusicButtonAction();
     void SoundsButtonAction();
     void InitButtons();
+    void LanguageButtonAction();
 }

@@ -2,16 +2,19 @@ public class SettingsPopupPresenter : ISettingsPopupPresenter
 {
     private SpriteToggle _musicToggle;
     private SpriteToggle _soundsToggle;
-    private readonly IDataContainersStorage _dataContainersStorage;
-    private readonly DataContainersIds _dataContainersIds;
-    private readonly SettingsSoundMusicService _settingsSoundMusicService;
     private IDataContainer<bool> _musicStateContainer;
     private IDataContainer<bool> _soundsStateContainer;
+    private readonly LanguageButton _languageButton;
+    private readonly DataContainersIds _dataContainersIds;
+    private readonly IDataContainersStorage _dataContainersStorage;
+    private readonly SettingsSoundMusicService _settingsSoundMusicService;
 
-    public SettingsPopupPresenter(IDataContainersStorage dataContainersStorage, DataContainersIds dataContainersIds, SettingsSoundMusicService settingsSoundMusicService)
+    public SettingsPopupPresenter(IDataContainersStorage dataContainersStorage, DataContainersIds dataContainersIds
+        , LanguageButton languageButton, SettingsSoundMusicService settingsSoundMusicService)
     {
         _dataContainersStorage = dataContainersStorage;
         _dataContainersIds = dataContainersIds;
+        _languageButton = languageButton;
         _settingsSoundMusicService = settingsSoundMusicService;
     }
     
@@ -30,6 +33,11 @@ public class SettingsPopupPresenter : ISettingsPopupPresenter
         _musicToggle.SetSprite(_musicStateContainer.Data);
     }
 
+    public void LanguageButtonAction()
+    {
+        _languageButton.OnClick();
+    }
+    
     public void MusicButtonAction()
     {
         _musicStateContainer.Data = !_musicStateContainer.Data;

@@ -15,6 +15,7 @@ MonoBehaviour:
   DataContainers:
   - rid: 6925662284169871368
   - rid: 6925662284169871369
+  - rid: 6925662333348872192
   SaveDataIds:
   - e2938e6b-3514-4be8-b9d1-c5f8fc5a3951
   - 8b74949a-8e52-4084-a77f-a339ba6c164e
@@ -33,3 +34,9 @@ MonoBehaviour:
         _key: 8b74949a-8e52-4084-a77f-a339ba6c164e
         _name: Music
         _data: 1
+    - rid: 6925662333348872192
+      type: {class: StringDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: 034c889c-af29-420b-b0b4-9fd26ceb7759
+        _name: CurrentLanguage
+        _data: a5c5431e-a408-49e8-b34d-6191594fcc93

@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 6178907229563390505}
   - component: {fileID: 8165086691778045730}
   - component: {fileID: 99008372006833080}
+  - component: {fileID: 5330590401553221662}
   m_Layer: 0
   m_Name: ProjectInstaller
   m_TagString: Untagged
@@ -225,10 +226,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dataDB: {fileID: 11400000, guid: cd9709690b0a18c4580e6698af85e0d1, type: 2}
+  _localeDB: {fileID: 11400000, guid: 198d7b823ae00fd46afd4b730ce99955, type: 2}
+  _languagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
   _scenesConfig: {fileID: 11400000, guid: fbe60141b27b78741b0069b428adeffc, type: 2}
   _dataContainersIds: {fileID: 99008372006833080}
   _musicPlayer: {fileID: 3784752960553898440}
   _loadingCurtains: {fileID: 7578761425343350237}
+  _languagesIds: {fileID: 5330590401553221662}
 --- !u!114 &99008372006833080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +247,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundsState: e2938e6b-3514-4be8-b9d1-c5f8fc5a3951
   _musicState: 8b74949a-8e52-4084-a77f-a339ba6c164e
+  _currentLanguage: 034c889c-af29-420b-b0b4-9fd26ceb7759
+--- !u!114 &5330590401553221662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8907448401213292268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c81fefa4f0ab4e4982dce36ba31df3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _englishLanguage: a5c5431e-a408-49e8-b34d-6191594fcc93
+  _russianLanguage: 5b5c5f1b-9065-4569-8f21-e390653f6219
 --- !u!1001 &4306228779892067491
 PrefabInstance:
   m_ObjectHideFlags: 0

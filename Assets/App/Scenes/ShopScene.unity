@@ -451,6 +451,8 @@ MonoBehaviour:
   _gameStateMachine:
     rid: 6925662283441635332
   _states:
+  - rid: 6925662333348872198
+  - rid: 6925662333348872199
   - rid: 6925662283441635334
   references:
     version: 2
@@ -459,6 +461,10 @@ MonoBehaviour:
       type: {class: GameStateMachine, ns: Infrastructure.StateMachine, asm: StateMachine}
     - rid: 6925662283441635334
       type: {class: ShopLoopState, ns: , asm: Assembly-CSharp}
+    - rid: 6925662333348872198
+      type: {class: ShopInitState, ns: , asm: Assembly-CSharp}
+    - rid: 6925662333348872199
+      type: {class: ShopLocalizationState, ns: , asm: Assembly-CSharp}
 --- !u!1 &1099971016
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -36.999977}
+  m_AnchoredPosition: {x: 0, y: -37}
   m_SizeDelta: {x: -1, y: -74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099971018
@@ -1088,12 +1094,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _entryState:
-    rid: 6925662283441635333
+    rid: 6925662333348872197
   references:
     version: 2
     RefIds:
-    - rid: 6925662283441635333
-      type: {class: ShopLoopState, ns: , asm: Assembly-CSharp}
+    - rid: 6925662333348872197
+      type: {class: ShopInitState, ns: , asm: Assembly-CSharp}
 --- !u!1 &2091523035
 GameObject:
   m_ObjectHideFlags: 0

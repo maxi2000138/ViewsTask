@@ -1,13 +1,13 @@
 using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class SettingsPopup : BasePopup<bool>
 {
     [SerializeField] private CustomButton _musicButton;
     [SerializeField] private CustomButton _soundsButton;
     [SerializeField] private CustomButton _hideButton;
+    [SerializeField] private CustomButton _languageButton;
     
     [SerializeField] private SpriteToggle _musicToggle;
     [SerializeField] private SpriteToggle _soundsToggle;
@@ -29,6 +29,7 @@ public class SettingsPopup : BasePopup<bool>
         
         _musicButton.AddListener(_settingsPopupPresenter.MusicButtonAction);
         _soundsButton.AddListener(_settingsPopupPresenter.SoundsButtonAction);
+        _languageButton.AddListener(_settingsPopupPresenter.LanguageButtonAction);
         _hideButton.AddListener(SetResult);
         
     }
@@ -37,6 +38,7 @@ public class SettingsPopup : BasePopup<bool>
     {
         _musicButton.RemoveListener(_settingsPopupPresenter.MusicButtonAction);
         _soundsButton.RemoveListener(_settingsPopupPresenter.SoundsButtonAction);
+        _languageButton.RemoveListener(_settingsPopupPresenter.LanguageButtonAction);
         _hideButton.RemoveListener(SetResult);
         
         return UniTask.CompletedTask;

@@ -6,12 +6,16 @@ public class DataContainersIds : MonoBehaviour
 {
     public string SoundsState => _soundsState;
     public string MusicState => _musicState;
+    public string CurrentLanguage => _currentLanguage;
         
     [ValueDropdown(nameof(DataContainersIDs))] 
     [SerializeField] private string _soundsState;
     
     [ValueDropdown(nameof(DataContainersIDs))] 
     [SerializeField] private string _musicState;
+
+    [ValueDropdown(nameof(DataContainersIDs))] 
+    [SerializeField ]public string _currentLanguage;
 
 
     private ValueDropdownList<string> DataContainersIDs()
