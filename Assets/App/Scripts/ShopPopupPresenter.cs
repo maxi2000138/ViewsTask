@@ -1,0 +1,4 @@
+class ShopPopupPresenter : IShopPopupPresenter
+{
+    
+}

@@ -11,9 +11,10 @@ public class StartSceneButtonsInstaller : MonoInstaller
     public override void InstallBindings()
     {
         Container.Bind(typeof(IInitializable), typeof(LanguageButton)).To<LanguageButton>().AsSingle();
+        
         Container.Bind<IButton>().To<PlayButtonLogic>().WhenInjectedIntoInstance(_playButton);
         Container.Bind<IButton>().To<ShopButtonLogic>().WhenInjectedIntoInstance(_shopButton);
         Container.Bind<IButton>().To<SettingsButtonLogic>().WhenInjectedIntoInstance(_settingsButton);
-        Container.Bind<IButton>().To<DefaultButtonLogic>().WhenInjectedIntoInstance(_rewardButton);
+        Container.Bind<IButton>().To<RewardButtonLogic>().WhenInjectedIntoInstance(_rewardButton);
     }
 }

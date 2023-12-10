@@ -49,3 +49,66 @@ MonoBehaviour:
     - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
       language: a5c5431e-a408-49e8-b34d-6191594fcc93
       text: '[PLAY]'
+  - _id: 40b32b3e-3ab5-431f-8f96-ca3a976b6898
+    _name: ShopHeader
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: "[\u041C\u0430\u0433\u0430\u0437\u0438\u043D]"
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: '[Shop]'
+  - _id: 191c2871-fe54-4781-a7e6-36a7ff45543d
+    _name: TicketsHeader
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: "\u0411\u0438\u043B\u0435\u0442\u044B"
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: Tickets
+  - _id: 8f3c6217-dada-4222-9e2f-c92327f25d09
+    _name: LocationsHeader
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: "\u041B\u043E\u043A\u0430\u0446\u0438\u0438"
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: Locations
+  - _id: 8ebc4fec-499b-4f75-9713-5bd0c2cfb869
+    _name: SkinsHeader
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: "\u0421\u043A\u0438\u043D\u044B"
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: Skins
+  - _id: 8267501e-c0c3-48e8-b03e-a87468657d26
+    _name: EpicChest
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: "[\u042D\u043F\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0441\u0443\u043D\u0434\u0443\u043A]"
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: '[Epic chest]'
+  - _id: a8a0e897-c9b4-4044-8ae5-4891ec8b23f0
+    _name: LuckyChest
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: "[\u0423\u0434\u0430\u0447\u043D\u044B\u0439 \u0441\u0443\u043D\u0434\u0443\u043A]"
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: '[Lucky chest]'
+  - _id: 93e8f9f2-d869-4cb1-ace3-bfaf329a9fcd
+    _name: Money
+    RecordGroups:
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: 5b5c5f1b-9065-4569-8f21-e390653f6219
+      text: '{0}'
+    - LanguagesDB: {fileID: 11400000, guid: ea69d58f1d6c7d4458feb56d5baaf3df, type: 2}
+      language: a5c5431e-a408-49e8-b34d-6191594fcc93
+      text: '{0}'

@@ -16,9 +16,14 @@ MonoBehaviour:
   - rid: 6925662284169871368
   - rid: 6925662284169871369
   - rid: 6925662333348872192
+  - rid: 6925662350729543680
+  - rid: 6925662350729543681
+  - rid: 6925662354589614080
   SaveDataIds:
   - e2938e6b-3514-4be8-b9d1-c5f8fc5a3951
   - 8b74949a-8e52-4084-a77f-a339ba6c164e
+  - befa2ba5-8925-4585-994c-d1ba4e6779f8
+  - 1938056f-34a3-482a-bf9b-09d7c51a5243
   references:
     version: 2
     RefIds:
@@ -40,3 +45,21 @@ MonoBehaviour:
         _key: 034c889c-af29-420b-b0b4-9fd26ceb7759
         _name: CurrentLanguage
         _data: a5c5431e-a408-49e8-b34d-6191594fcc93
+    - rid: 6925662350729543680
+      type: {class: IntDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: befa2ba5-8925-4585-994c-d1ba4e6779f8
+        _name: Money
+        _data: 0
+    - rid: 6925662350729543681
+      type: {class: IntDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: bf041121-7124-4867-bd66-7918119ab12e
+        _name: LastCompletedLVL
+        _data: 0
+    - rid: 6925662354589614080
+      type: {class: IntDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: 1938056f-34a3-482a-bf9b-09d7c51a5243
+        _name: PlayedDayes
+        _data: 0

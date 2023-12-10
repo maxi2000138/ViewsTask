@@ -95,3 +95,41 @@ O
 -Assets/App/Scripts/ISettingsPopupPresenter.cs,9\e\9e66ddfed261917c408e291ef8b4a3b1ff08028f
 \
 ,Assets/App/Scripts/SettingsPopupPresenter.cs,8\1\8151d2340864459e96b176d2c1c6abc16962c5fa
+Y
+)Assets/App/Scripts/SettingsButtonLogic.cs,f\b\fb68182338041316c4d53daba6e10cce0001999b
+U
+%Assets/App/Scripts/PlayButtonLogic.cs,9\d\9d7346862362c913328cb145b3c93cc184b4fc8c
+S
+#Assets/SettingsSoundMusicService.cs,1\d\1d5d09cb577efa4db3d9bef9e7a87357f93629cc
+†
+pPackages/com.maksimzabelo.core/Runtime/Scripts/DataFeature/DataContainerFeauture/DataContainer/IDataContainer.cs,f\8\f8a2a180006a24e1fb6708a10d262a46a4422639
+è
+_Packages/com.maksimzabelo.core/Runtime/Scripts/DataFeature/DataSaveFeature/SaveLoadSingleton.cs,9\4\94b971bfc2f0eb607da25f625444c13cf5f77e68
+w
+GPackages/com.maksimzabelo.localization/Runtime/Scripts/LocalizedText.cs,c\7\c7a35e6aed4b2bd7367468e0f495ccb515104d89
+è
+_Packages/com.maksimzabelo.zenjectstatemachine/Runtime/Scripts/StateMachine/IGameStateMachine.cs,b\5\b520bae3be5fd23533f4331ff2ad56841c8a88ed
+•
+uPackages/com.maksimzabelo.zenjectstatemachine/Runtime/Scripts/StateMachine/States/Interfaces/IOverloadedEnterState.cs,f\b\fbc40643df9b55aed4e5f697ac4b1c25a64a254e
+ì
+cPackages/com.maksimzabelo.zenjectstatemachine/Runtime/Scripts/StateMachine/States/LoadSceneState.cs,7\e\7e1b419cc25a2dd5d125016a3bd254c23ffdb507
+Ä
+PPackages/com.maksimzabelo.localization/Runtime/Scripts/LocalizedTextBehaviour.cs,6\b\6b09ec77dae5fce713e591cc572be7abc05672c6
+Y
+)Assets/App/Scripts/LocalizationService.cs,a\a\aa97fbca3d363492368601653f705eca35e4dc84
+O
+Assets/MenuLocalizationState.cs,9\5\95721a797b292f9f40996acd3941d4f9fc0dd5db
+G
+Assets/ShopInitState.cs,3\b\3b55838c02c5c5e4df700f6f623789655efaf5e5
+O
+Assets/ShopLocalizationState.cs,c\c\cc828c0d3a88f3dc6d208154153a06b422af1c08
+H
+Assets/StartInitState.cs,6\9\69a283c185c8c2967bb6c1e79125dae007885bf4
+P
+ Assets/StartLocalizationState.cs,f\8\f89747c9b0867d6264f46229153a1a033a24d4a4
+G
+Assets/MenuInitState.cs,8\8\88f0e7b24cfc4140838c92f1babd5f30b2b9bdad
+s
+CPackages/com.maksimzabelo.localization/Runtime/Scripts/Localizer.cs,2\0\20b2e7be9364511c06f8cf76f305c1c6ff3ef402
+H
+Assets/LanguageButton.cs,1\8\1879b58956efc1511adcf94cf021bcb9e3a24ec6

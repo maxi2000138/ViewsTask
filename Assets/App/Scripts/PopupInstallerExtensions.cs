@@ -2,7 +2,7 @@
 
 public class PopupInstallerExtensions
 {
-    public static void BinPopup<TInterface,TRealization>(DiContainer container, BasePopup popup) where TInterface : IPopupPresenter where TRealization : TInterface
+    public static void BindPopup<TInterface,TRealization>(DiContainer container, BasePopup popup) where TInterface : IPopupPresenter where TRealization : TInterface
     {
         container.Bind<TInterface>().To<TRealization>().AsSingle();
         BindPopup<TInterface>(container, popup);

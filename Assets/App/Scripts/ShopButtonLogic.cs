@@ -1,16 +1,14 @@
 public class ShopButtonLogic : IButton
 {
-    private readonly SceneLoaderWithCurtains _sceneLoaderWithCurtains;
-    private readonly ScenesConfig _scenesConfig;
+    private readonly StartPopupService _startPopupService;
 
-    public ShopButtonLogic(SceneLoaderWithCurtains sceneLoaderWithCurtains, ScenesConfig scenesConfig)
+    public ShopButtonLogic(StartPopupService startPopupService)
     {
-        _sceneLoaderWithCurtains = sceneLoaderWithCurtains;
-        _scenesConfig = scenesConfig;
+        _startPopupService = startPopupService;
     }
     
     public void OnClick()
     {
-        _sceneLoaderWithCurtains.ShowCurtainsAndLoadScene(_scenesConfig.ScenesName[SceneType.Shop]);
+        _startPopupService.ShowShopPopup();
     }
 }
