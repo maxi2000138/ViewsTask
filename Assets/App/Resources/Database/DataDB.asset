@@ -19,6 +19,9 @@ MonoBehaviour:
   - rid: 6925662350729543680
   - rid: 6925662350729543681
   - rid: 6925662354589614080
+  - rid: 6925662354589614083
+  - rid: 6925662354589614084
+  - rid: 6925662354589614085
   SaveDataIds:
   - e2938e6b-3514-4be8-b9d1-c5f8fc5a3951
   - 8b74949a-8e52-4084-a77f-a339ba6c164e
@@ -62,4 +65,22 @@ MonoBehaviour:
       data:
         _key: 1938056f-34a3-482a-bf9b-09d7c51a5243
         _name: PlayedDayes
+        _data: 0
+    - rid: 6925662354589614083
+      type: {class: StringDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: e5343b8d-1bd7-44b2-bc73-7a7c8f3192a9
+        _name: ShopBoughtItems
+        _data: 
+    - rid: 6925662354589614084
+      type: {class: IntDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: 10b1958e-8e4d-4e6d-980a-a4170941cd77
+        _name: LevelsAmount
+        _data: 0
+    - rid: 6925662354589614085
+      type: {class: IntDataContainer, ns: , asm: core-scripts}
+      data:
+        _key: 1fe2cdbf-75cd-4c94-b29e-570c89d46a06
+        _name: CurrentReward
         _data: 0

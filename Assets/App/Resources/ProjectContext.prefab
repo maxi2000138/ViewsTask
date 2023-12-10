@@ -501,7 +501,9 @@ MonoBehaviour:
   _musicState: 8b74949a-8e52-4084-a77f-a339ba6c164e
   _currentLanguage: 034c889c-af29-420b-b0b4-9fd26ceb7759
   _money: befa2ba5-8925-4585-994c-d1ba4e6779f8
-  _lastCompletedLVL: 
+  _lastCompletedLVL: bf041121-7124-4867-bd66-7918119ab12e
+  _levelsAmount: 10b1958e-8e4d-4e6d-980a-a4170941cd77
+  _currentReward: 1fe2cdbf-75cd-4c94-b29e-570c89d46a06
 --- !u!114 &5330590401553221662
 MonoBehaviour:
   m_ObjectHideFlags: 0

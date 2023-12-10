@@ -9,8 +9,10 @@ public class DataContainersIds : MonoBehaviour
     public string CurrentLanguage => _currentLanguage;
     public string Money => _money;
     public string LastCompletedLVL => _lastCompletedLVL;
-    
-        
+    public string LevelsAmount => _levelsAmount;
+    public string CurrentReward => _currentReward;
+
+
     [ValueDropdown(nameof(DataContainersIDs))] 
     [SerializeField] private string _soundsState;
     
@@ -25,6 +27,13 @@ public class DataContainersIds : MonoBehaviour
     
     [ValueDropdown(nameof(DataContainersIDs))] 
     [SerializeField] private string _lastCompletedLVL;
+    
+
+    [ValueDropdown(nameof(DataContainersIDs))] 
+    [SerializeField] private string _levelsAmount;
+
+    [ValueDropdown(nameof(DataContainersIDs))] 
+    [SerializeField] private string _currentReward;
 
     private ValueDropdownList<string> DataContainersIDs()
     {

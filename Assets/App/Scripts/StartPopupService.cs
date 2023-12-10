@@ -21,6 +21,12 @@ public class StartPopupService : BasePopupService
     {
         await ShowNoReturnValuePopup<RewardPopup>();
     }
+    
+    public async UniTask ShowDayRewardPopup()
+    {
+        await ShowNoReturnValuePopup<DayRewardPopup>();
+    }
+
 
     private async Task ShowNoReturnValuePopup<T>() where T : BasePopup<bool>
     {

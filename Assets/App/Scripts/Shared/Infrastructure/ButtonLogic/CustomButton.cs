@@ -13,12 +13,14 @@ public class CustomButton : MonoBehaviour
     
     [InjectOptional] private IButton _buttonLogic;
     private MusicPlayer _musicPlayer;
+    private bool _enabled;
 
 
     [Inject]
     private void Construct(MusicPlayer musicPlayer)
     {
         _musicPlayer = musicPlayer;
+        _enabled = _button.enabled;
     }
     
     private void OnEnable()
@@ -45,13 +47,26 @@ public class CustomButton : MonoBehaviour
 
     public void AddListener(UnityAction listener) => _button.onClick.AddListener(listener);
     public void RemoveListener(UnityAction listener) => _button.onClick.RemoveListener(listener);
+    public void EnableButton()
+    {
+        _enabled = true;
+        _button.interactable = true;
+    }
+
+    public void DisableButton()
+    {
+        _enabled = false;
+        _button.interactable = false;
+    }
 
 
     private async void DisableAndScaleOnClick()
     {
         _button.interactable = false;
         await _button.transform.DOPunchScale(new Vector3(1f,1f,1f) * _config.ClickScale, _config.Duration).Play().ToUniTask();
-        _button.interactable = true;
+        
+        if(_enabled)
+            _button.interactable = true;
     }
     
     public void PlaySoundOnClick()
